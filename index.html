@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Web Audio API</title>
+  <script type="text/javascript" src="https://raw.github.com/corbanbrook/dsp.js/master/dsp.js"></script>
+  <script type="text/javascript" src="javascripts/extensions.js"></script>
+  <script type="text/javascript" src="javascripts/analyser_view.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+</head>
+<body>
+Sources:<br/>
+<input type="button" id="play_guthrie" value="Guthrie Govan - Waves"/>
+<hr/>
+<div id="status"></div>
+<label for="volume">Volume:</label> <input id="volume" type="range" min="0" max="1" step="0.01"/><br/>
+<input type="button" id="stop"         value="Stop" />
+<input type="button" id="pass_through" value="Bypass"/>
+<input type="button" id="mono_sum"     value="Mono (Sum)"/>
+<input type="button" id="mono_side"    value="Mono (Side)"/><br/>
+<div id="variance"></div>
+<canvas id="analyser" width="500px" height="100px"></canvas>
+</body>
+</html>
